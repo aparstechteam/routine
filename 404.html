@@ -1,6 +1,9 @@
 <script>
-  let path = location.pathname;
-  localStorage.setItem("path", path.replace("/routine", ""));
+  let path = location.href;
+  localStorage.setItem(
+    "path",
+    path.replace("https://aparstechteam.github.io/routine", "")
+  );
 
   window.location.href = "https://aparstechteam.github.io/routine/";
 </script>
